@@ -1,21 +1,30 @@
 package model;
 
+// Classe abstrata base para os animais
 public abstract class Animal {
 
     protected String nome;
 
+    // Construtor
     public Animal(String nome) {
         this.nome = nome;
     }
-    // Método abstrato = não tem implementação aqui
-    // Obriga as classes filhas a implementarem
 
-     public abstract void fazerSom();
+    // Getter
+    public String getNome() {
+        return nome;
+    }
 
-    // Sobrescrevendo o toString para exibir o objeto de forma amigável
+    // Setter
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    // Método abstrato
+    public abstract void fazerSom();
+
     @Override
-    public String toString(){
-        return "Animal" + nome;
+    public String toString() {
+        return "Animal: " + nome;
     }
 }
-

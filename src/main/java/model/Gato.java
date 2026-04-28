@@ -13,7 +13,7 @@ public class Gato extends Animal {
 
     @Override
     public String toString() {
-        return "Gato" + nome;
+        return " Gato " + nome;
     }
 }
 
